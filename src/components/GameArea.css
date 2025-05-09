@@ -1,0 +1,117 @@
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    animation: fadeIn 0.8s ease-out;
+  }
+  
+  .center-message {
+    background-color: darkred;
+    color: white;
+    padding: 30px 40px;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    text-align: center;
+    animation: popIn 0.5s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes popIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+.game-container {
+    width: 640px;
+    margin: 30px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #ff4e50, #f9d423);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 15px;
+  }
+  
+  .top-bar button {
+    background-color: white;
+    color: #d32f2f;
+    border: 2px solid #d32f2f;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .top-bar button:hover {
+    background-color: #d32f2f;
+    color: white;
+  }
+  
+  .game-area {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border: 2px solid black;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .message-wrapper {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .glow-message {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: darkred;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+    animation: glow 1s infinite alternate;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #ff0000, 0 0 15px #ff0000;
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 20px #ff0000, 0 0 25px #ff0000;
+    }
+  }
+  

@@ -1,0 +1,23 @@
+.player {
+    width: 60px;
+    height: 60px;
+    background-color: crimson;
+    position: absolute;
+    transition: all 1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .face {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .eye {
+    width: 10px;
+    height: 10px;
+    background-color: #4b2e1e;
+    border-radius: 50%;
+  }
+  
