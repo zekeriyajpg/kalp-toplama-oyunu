@@ -34,7 +34,7 @@ function GameArea() {
 
   useEffect(() => {
     if (collected === 10) {
-      setMessage("Sen Zekeriya'nın bahsettiği Sıla olmalısın ❤️ Anlattığı kadar varmışsın");
+      setMessage("Sen Zekeriya'nın bahsettiği Sıla olmalısın ❤️❤️ Anlattığı kadar varmışsın");
     }
   }, [collected]);
 
